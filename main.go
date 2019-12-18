@@ -40,7 +40,7 @@ func selectRows(session *gocql.Session, cql string) (err error) {
 func newSslOptions() (opts *gocql.SslOptions) {
 	config := &tls.Config{
 		ServerName:         CHOST,
-		InsecureSkipVerify: true,
+		InsecureSkipVerify: false,
 	}
 	opts = &gocql.SslOptions{
 		Config:                 config,
