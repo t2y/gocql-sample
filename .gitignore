@@ -1,3 +1,6 @@
+.envrc
+gocql-sample
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
